@@ -1,0 +1,6 @@
+.LightGrid {
+    display :grid;
+    grid-template-columns: repeat(5,10rem);
+    grid-template-rows: repeat(5,10rem);
+    justify-content: center
+}

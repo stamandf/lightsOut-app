@@ -1,0 +1,14 @@
+.LightCell {
+    height: 10rem;
+    width: 10rem;
+    border: solid #000000;
+    background-color: #7D7D7D;
+}
+.lightOn {
+    background-color: #ffff;
+}
+.LightCell:hover {
+    cursor: pointer;
+
+}
+
