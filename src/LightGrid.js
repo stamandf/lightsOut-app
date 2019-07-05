@@ -104,15 +104,23 @@ export default class LightGrid extends React.Component {
             ));
         return arrayLights;
     }
-    
     render() {
-        
         return (
             <div>
-                <h1>LIGHTS OUT!</h1>
-                {this.state.hasWon && <p>YOU WON!</p>}
-                <div className="LightGrid" >{this.renderGrid()}</div>
+                {
+                    this.state.hasWon ? 
+                    <div className="winner">
+                        <span className="neon-orange">YOU</span> 
+                        <span className="neon-blue">WIN!</span>
+                    </div> : 
+                    <div>
+                        <span className="neon-orange">Lights</span> 
+                        <span className="neon-blue">Out</span>
+                        <div className="LightGrid" >{this.renderGrid()}</div> 
+                    </div>
+                }
             </div>
         )
     }
 }
+  
