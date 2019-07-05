@@ -9,6 +9,7 @@ export default class LightCell extends React.Component {
     }
 
     handleClick(e) {
+        e.preventDefault();
         this.props.toggleLights();
     }
     render(){
